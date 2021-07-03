@@ -172,4 +172,16 @@
         <tag>博客</tag>
       </tags>
   </entry>
+  <entry>
+    <title>demo0000001</title>
+    <url>/2021/07/03/demo0000001/</url>
+    <content><![CDATA[<p>多级分类</p>
+<p>阿巴阿巴</p>
+]]></content>
+      <categories>
+        <category>demo</category>
+        <category>demo1</category>
+        <category>demo2</category>
+      </categories>
+  </entry>
 </search>
