@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://lyyqaq.com/images/avatar.webp">
 <meta property="article:published_time" content="2021-07-03T09:41:36.000Z">
-<meta property="article:modified_time" content="2021-07-03T13:09:57.774Z">
+<meta property="article:modified_time" content="2021-07-03T13:15:11.790Z">
 <meta property="article:author" content="lyyQwQ">
 <meta property="article:tag" content="vivado">
 <meta property="article:tag" content="fpga">
@@ -162,7 +162,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~1.86K
+                        ~1.87K
                     
                     字
                 </li>
@@ -182,7 +182,7 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1625317797774"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1625318111790"></time> 前，其中的内容可能需要更新。
             </div>
             
                 <div class="kratos-post-inner-toc">
@@ -199,7 +199,9 @@
 <li>选择<code>RTL Project</code></li>
 <li>勾选<code>Do not specify sources at this time</code>，这样可以暂时不用选择源文件<img src="/2021/07/03/fpga0001/img_5.png" class=""></li>
 <li>可以随便选一个，后面有需要的时候再改<img src="/2021/07/03/fpga0001/img_6.png" class=""></li>
-<li>点击<code>finish</code>创建工程  <h1 id="2-添加verilog设计文件"><a href="#2-添加verilog设计文件" class="headerlink" title="2.添加verilog设计文件"></a>2.添加verilog设计文件</h1></li>
+<li>点击<code>finish</code>创建工程  </li>
+</ul>
+<h1 id="2-添加verilog设计文件"><a href="#2-添加verilog设计文件" class="headerlink" title="2.添加verilog设计文件"></a>2.添加verilog设计文件</h1><ul>
 <li>在<code>sources</code>窗口右键，点击<code>Add Sources</code><img src="/2021/07/03/fpga0001/img_7.png" class=""></li>
 <li>点击<code>Add or create design sources</code><img src="/2021/07/03/fpga0001/img_8.png" class=""></li>
 <li>点击<code>create file</code>，输入文件名<img src="/2021/07/03/fpga0001/img_9.png" class=""></li>
@@ -208,14 +210,17 @@
 </ul>
 <h1 id="3-添加verilog仿真文件"><a href="#3-添加verilog仿真文件" class="headerlink" title="3. 添加verilog仿真文件"></a>3. 添加verilog仿真文件</h1><ul>
 <li>在<code>sources</code>窗口右键，点击<code>Add Sources</code><br>点击<code>Add or create simulation sources</code><img src="/2021/07/03/fpga0001/img_12.png" class=""></li>
-<li>创建文件，<strong>注意不要与前面设计文件的名字一样</strong><img src="/2021/07/03/fpga0001/img_13.png" class="">
-<h1 id="4-编写代码"><a href="#4-编写代码" class="headerlink" title="4. 编写代码"></a>4. 编写代码</h1><h2 id="4-1-调节字体大小"><a href="#4-1-调节字体大小" class="headerlink" title="4.1 调节字体大小"></a>4.1 调节字体大小</h2>现在这个字体是不是太小了呢？<br>让我们来调节一下吧！</li>
+<li>创建文件，<strong>注意不要与前面设计文件的名字一样</strong><img src="/2021/07/03/fpga0001/img_13.png" class=""></li>
+</ul>
+<h1 id="4-编写代码"><a href="#4-编写代码" class="headerlink" title="4. 编写代码"></a>4. 编写代码</h1><h2 id="4-1-调节字体大小"><a href="#4-1-调节字体大小" class="headerlink" title="4.1 调节字体大小"></a>4.1 调节字体大小</h2><p>现在这个字体是不是太小了呢？<br>让我们来调节一下吧！</p>
+<ul>
 <li>点击顶部<code>Tools  - Settings</code><img src="/2021/07/03/fpga0001/img_14.png" class=""></li>
 <li>然后点击图片中红框位置，可以在右侧看到字体类型和字体大小<img src="/2021/07/03/fpga0001/img_15.png" class=""></li>
 <li>选择一个你喜欢的字体类型和字体大小吧！<br>我选择的是我以前弄得，把中文微软雅黑和英文Jet Brains Mono混合在一起的字体<br>字体推荐选择consolas<br>下方的框可以预览设置后的字体<img src="/2021/07/03/fpga0001/img_16.png" class=""></li>
 </ul>
 <h2 id="4-2-写个简单的代码"><a href="#4-2-写个简单的代码" class="headerlink" title="4.2 写个简单的代码"></a>4.2 写个简单的代码</h2><p>打开test，写个简单的非门</p>
 <figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> test(</span><br><span class="line"><span class="keyword">input</span> in,</span><br><span class="line"><span class="keyword">output</span> out</span><br><span class="line">    );</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">assign</span> out = ~in;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+
 <h1 id="5-仿真"><a href="#5-仿真" class="headerlink" title="5.  仿真"></a>5.  仿真</h1><p>想要知道代码是否写的有问题，就需要进行仿真</p>
 <p>原文中提到</p>
 <blockquote>

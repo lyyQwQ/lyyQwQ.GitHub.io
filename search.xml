@@ -3,7 +3,29 @@
   <entry>
     <title>post布局尝试</title>
     <url>/2021/07/01/post%E5%B8%83%E5%B1%80%E5%B0%9D%E8%AF%95/</url>
-    <content><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> namespase std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;abaabaaba&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题-1"><a href="#三级标题-1" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题-1"><a href="#四级标题-1" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题-1"><a href="#五级标题-1" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题-1"><a href="#六级标题-1" class="headerlink" title="六级标题"></a>六级标题</h6><h6 id="六级标题-2"><a href="#六级标题-2" class="headerlink" title="六级标题"></a>六级标题</h6><h5 id="五级标题-2"><a href="#五级标题-2" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题-3"><a href="#六级标题-3" class="headerlink" title="六级标题"></a>六级标题</h6><h6 id="六级标题-4"><a href="#六级标题-4" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="一级标题-2"><a href="#一级标题-2" class="headerlink" title="一级标题"></a>一级标题</h1><p>阿巴阿巴</p>
+<h2 id="二级标题-2"><a href="#二级标题-2" class="headerlink" title="二级标题"></a>二级标题</h2><p>阿巴阿巴</p>
+<h3 id="三级标题-2"><a href="#三级标题-2" class="headerlink" title="三级标题"></a>三级标题</h3><p>阿巴阿巴</p>
+<h4 id="四级标题-2"><a href="#四级标题-2" class="headerlink" title="四级标题"></a>四级标题</h4><p>阿巴阿巴</p>
+<h4 id="四级标题-3"><a href="#四级标题-3" class="headerlink" title="四级标题"></a>四级标题</h4><p>阿巴阿巴</p>
+<div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>屑魔女(</span></div>
+    <div class="xContent"><div class="inner">
+        <img src="/2021/07/01/post%E5%B8%83%E5%B1%80%E5%B0%9D%E8%AF%95/1615366265569.jpg" class="">
+ 
+    </div></div>
+    </div>
+<img src="/2021/07/01/post%E5%B8%83%E5%B1%80%E5%B0%9D%E8%AF%95/1615366265569.jpg" class="">
+<h5 id="五级标题-3"><a href="#五级标题-3" class="headerlink" title="五级标题"></a>五级标题</h5><p>阿巴阿巴</p>
+<h6 id="六级标题-5"><a href="#六级标题-5" class="headerlink" title="六级标题"></a>六级标题</h6><p>阿巴阿巴</p>
+<h6 id="六级标题-6"><a href="#六级标题-6" class="headerlink" title="六级标题"></a>六级标题</h6><p>阿巴阿巴</p>
+<h5 id="五级标题-4"><a href="#五级标题-4" class="headerlink" title="五级标题"></a>五级标题</h5><p>阿巴阿巴</p>
+<h6 id="六级标题-7"><a href="#六级标题-7" class="headerlink" title="六级标题"></a>六级标题</h6><p>阿巴阿巴</p>
+<img src="/2021/07/01/post%E5%B8%83%E5%B1%80%E5%B0%9D%E8%AF%95/1615366265569.jpg" class="">
+<h6 id="六级标题-8"><a href="#六级标题-8" class="headerlink" title="六级标题"></a>六级标题</h6><p>阿巴阿巴</p>
+<h5 id="五级标题-5"><a href="#五级标题-5" class="headerlink" title="五级标题"></a>五级标题</h5><p>阿巴阿巴</p>
+<h6 id="六级标题-9"><a href="#六级标题-9" class="headerlink" title="六级标题"></a>六级标题</h6><p>阿巴阿巴</p>
+<h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> namespase std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;abaabaaba&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><p><a href="http://www.baidu.com/">emm</a></p>
 <p>我链接呢？！</p>
@@ -196,7 +218,9 @@
 <li>选择<code>RTL Project</code></li>
 <li>勾选<code>Do not specify sources at this time</code>，这样可以暂时不用选择源文件<img src="/2021/07/03/fpga0001/img_5.png" class=""></li>
 <li>可以随便选一个，后面有需要的时候再改<img src="/2021/07/03/fpga0001/img_6.png" class=""></li>
-<li>点击<code>finish</code>创建工程  <h1 id="2-添加verilog设计文件"><a href="#2-添加verilog设计文件" class="headerlink" title="2.添加verilog设计文件"></a>2.添加verilog设计文件</h1></li>
+<li>点击<code>finish</code>创建工程  </li>
+</ul>
+<h1 id="2-添加verilog设计文件"><a href="#2-添加verilog设计文件" class="headerlink" title="2.添加verilog设计文件"></a>2.添加verilog设计文件</h1><ul>
 <li>在<code>sources</code>窗口右键，点击<code>Add Sources</code><img src="/2021/07/03/fpga0001/img_7.png" class=""></li>
 <li>点击<code>Add or create design sources</code><img src="/2021/07/03/fpga0001/img_8.png" class=""></li>
 <li>点击<code>create file</code>，输入文件名<img src="/2021/07/03/fpga0001/img_9.png" class=""></li>
@@ -205,14 +229,17 @@
 </ul>
 <h1 id="3-添加verilog仿真文件"><a href="#3-添加verilog仿真文件" class="headerlink" title="3. 添加verilog仿真文件"></a>3. 添加verilog仿真文件</h1><ul>
 <li>在<code>sources</code>窗口右键，点击<code>Add Sources</code><br>点击<code>Add or create simulation sources</code><img src="/2021/07/03/fpga0001/img_12.png" class=""></li>
-<li>创建文件，<strong>注意不要与前面设计文件的名字一样</strong><img src="/2021/07/03/fpga0001/img_13.png" class="">
-<h1 id="4-编写代码"><a href="#4-编写代码" class="headerlink" title="4. 编写代码"></a>4. 编写代码</h1><h2 id="4-1-调节字体大小"><a href="#4-1-调节字体大小" class="headerlink" title="4.1 调节字体大小"></a>4.1 调节字体大小</h2>现在这个字体是不是太小了呢？<br>让我们来调节一下吧！</li>
+<li>创建文件，<strong>注意不要与前面设计文件的名字一样</strong><img src="/2021/07/03/fpga0001/img_13.png" class=""></li>
+</ul>
+<h1 id="4-编写代码"><a href="#4-编写代码" class="headerlink" title="4. 编写代码"></a>4. 编写代码</h1><h2 id="4-1-调节字体大小"><a href="#4-1-调节字体大小" class="headerlink" title="4.1 调节字体大小"></a>4.1 调节字体大小</h2><p>现在这个字体是不是太小了呢？<br>让我们来调节一下吧！</p>
+<ul>
 <li>点击顶部<code>Tools  - Settings</code><img src="/2021/07/03/fpga0001/img_14.png" class=""></li>
 <li>然后点击图片中红框位置，可以在右侧看到字体类型和字体大小<img src="/2021/07/03/fpga0001/img_15.png" class=""></li>
 <li>选择一个你喜欢的字体类型和字体大小吧！<br>我选择的是我以前弄得，把中文微软雅黑和英文Jet Brains Mono混合在一起的字体<br>字体推荐选择consolas<br>下方的框可以预览设置后的字体<img src="/2021/07/03/fpga0001/img_16.png" class=""></li>
 </ul>
 <h2 id="4-2-写个简单的代码"><a href="#4-2-写个简单的代码" class="headerlink" title="4.2 写个简单的代码"></a>4.2 写个简单的代码</h2><p>打开test，写个简单的非门</p>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span> test(</span><br><span class="line"><span class="keyword">input</span> in,</span><br><span class="line"><span class="keyword">output</span> out</span><br><span class="line">    );</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">assign</span> out = ~in;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+
 <h1 id="5-仿真"><a href="#5-仿真" class="headerlink" title="5.  仿真"></a>5.  仿真</h1><p>想要知道代码是否写的有问题，就需要进行仿真</p>
 <p>原文中提到</p>
 <blockquote>
