@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="../images/avatar.webp">
-  <title>评论区测试 | lyyQwQ</title>
+  <title>FPGA快速入门(1) 开发环境 vivado使用 | lyyQwQ</title>
   <meta name="author" content="lyyQwQ" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,20 +13,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="博客" />
+    <meta name="keywords" content="fpga, vivado" />
   
-  <meta name="description" content="阿巴阿巴">
+  <meta name="description" content="前提版本：2017.4适合有编程基础的，我也是边学边记录参考文章：https:&#x2F;&#x2F;www.paincker.com&#x2F;vivado-basic-usage-1该文章中省略了几处细节，我在按该文章操作时踩到了坑，所以我打算在这个文章的基础上进行改造不过严格来说，这应该算一篇转载博客，感谢大佬的文章让我快速入门了FPGA 0. 安装略（网上好多博客都有写怎么安装，这里就不写了（ 1. 创建工程 点击 f">
 <meta property="og:type" content="article">
-<meta property="og:title" content="评论区测试">
-<meta property="og:url" content="https://lyyqaq.com/2021/07/03/%E8%AF%84%E8%AE%BA%E5%8C%BA%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:title" content="FPGA快速入门(1) 开发环境 vivado使用">
+<meta property="og:url" content="https://lyyqaq.com/2021/07/03/fpga0001/index.html">
 <meta property="og:site_name" content="lyyQwQ">
-<meta property="og:description" content="阿巴阿巴">
+<meta property="og:description" content="前提版本：2017.4适合有编程基础的，我也是边学边记录参考文章：https:&#x2F;&#x2F;www.paincker.com&#x2F;vivado-basic-usage-1该文章中省略了几处细节，我在按该文章操作时踩到了坑，所以我打算在这个文章的基础上进行改造不过严格来说，这应该算一篇转载博客，感谢大佬的文章让我快速入门了FPGA 0. 安装略（网上好多博客都有写怎么安装，这里就不写了（ 1. 创建工程 点击 f">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://lyyqaq.com/images/avatar.webp">
-<meta property="article:published_time" content="2021-07-03T05:17:35.000Z">
-<meta property="article:modified_time" content="2021-07-03T05:19:33.993Z">
+<meta property="article:published_time" content="2021-07-03T09:41:36.000Z">
+<meta property="article:modified_time" content="2021-07-03T13:09:57.774Z">
 <meta property="article:author" content="lyyQwQ">
-<meta property="article:tag" content="博客">
+<meta property="article:tag" content="vivado">
+<meta property="article:tag" content="fpga">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://lyyqaq.com/images/avatar.webp">
 <meta name="twitter:site" content="@null">
@@ -151,7 +152,7 @@
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">评论区测试</h1>
+                <h1 class="kratos-entry-title text-center">FPGA快速入门(1) 开发环境 vivado使用</h1>
             
             
             <ul class="kratos-post-meta text-center">
@@ -161,19 +162,19 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        4
+                        ~1.86K
                     
                     字
                 </li>
                 
-                    <li id="/2021/07/03/%E8%AF%84%E8%AE%BA%E5%8C%BA%E6%B5%8B%E8%AF%95/" class="leancloud_visitors" data-flag-title="评论区测试">
+                    <li id="/2021/07/03/fpga0001/" class="leancloud_visitors" data-flag-title="FPGA快速入门(1) 开发环境 vivado使用">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次阅读
                     </li>
                     
                         <li>
                             <i class="fa fa-commenting-o"></i>
-                            <span data-xid="/2021/07/03/%E8%AF%84%E8%AE%BA%E5%8C%BA%E6%B5%8B%E8%AF%95/" class="waline-comment-count"> </span> 条评论
+                            <span data-xid="/2021/07/03/fpga0001/" class="waline-comment-count"> </span> 条评论
                         </li>
                     
                 
@@ -181,11 +182,75 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1625289573993"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1625317797774"></time> 前，其中的内容可能需要更新。
             </div>
             
+                <div class="kratos-post-inner-toc">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E6%8F%90"><span class="toc-number">1.</span> <span class="toc-text">前提</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0-%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">0. 安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">1. 创建工程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%B7%BB%E5%8A%A0verilog%E8%AE%BE%E8%AE%A1%E6%96%87%E4%BB%B6"><span class="toc-number">4.</span> <span class="toc-text">2.添加verilog设计文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%B7%BB%E5%8A%A0verilog%E4%BB%BF%E7%9C%9F%E6%96%87%E4%BB%B6"><span class="toc-number">5.</span> <span class="toc-text">3. 添加verilog仿真文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81"><span class="toc-number">6.</span> <span class="toc-text">4. 编写代码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E8%B0%83%E8%8A%82%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F"><span class="toc-number">6.1.</span> <span class="toc-text">4.1 调节字体大小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E5%86%99%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">6.2.</span> <span class="toc-text">4.2 写个简单的代码</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E4%BB%BF%E7%9C%9F"><span class="toc-number">7.</span> <span class="toc-text">5.  仿真</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-1-%E7%BC%96%E5%86%99%E4%BB%BF%E7%9C%9F%E4%BB%A3%E7%A0%81"><span class="toc-number">7.1.</span> <span class="toc-text">5.1 编写仿真代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-2-%E8%A1%8C%E4%B8%BA%E4%BB%BF%E7%9C%9F"><span class="toc-number">7.2.</span> <span class="toc-text">5.2 行为仿真</span></a></li></ol></li></ol>
+                </div>
+            
             <hr />
-            <h1 id="阿巴阿巴"><a href="#阿巴阿巴" class="headerlink" title="阿巴阿巴"></a>阿巴阿巴</h1>
+            <h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><p>版本：2017.4<br>适合有编程基础的，我也是边学边记录<br>参考文章：<a target="_blank" rel="noopener" href="https://www.paincker.com/vivado-basic-usage-1">https://www.paincker.com/vivado-basic-usage-1</a><br>该文章中省略了几处细节，我在按该文章操作时踩到了坑，所以我打算在这个文章的基础上进行改造<br>不过严格来说，这应该算一篇转载博客，感谢大佬的文章让我快速入门了FPGA</p>
+<h1 id="0-安装"><a href="#0-安装" class="headerlink" title="0. 安装"></a>0. 安装</h1><p>略（<br>网上好多博客都有写怎么安装，这里就不写了（</p>
+<h1 id="1-创建工程"><a href="#1-创建工程" class="headerlink" title="1. 创建工程"></a>1. 创建工程</h1><ul>
+<li>点击 <code>file--new project</code> <img src="/2021/07/03/fpga0001/img_1.png" class=""></li>
+<li>输入工程名称，选择工程路径</li>
+<li>确保选中“Create Project Subdirectory”框，点击next<img src="/2021/07/03/fpga0001/img_2.png" class=""></li>
+<li>选择<code>RTL Project</code></li>
+<li>勾选<code>Do not specify sources at this time</code>，这样可以暂时不用选择源文件<img src="/2021/07/03/fpga0001/img_5.png" class=""></li>
+<li>可以随便选一个，后面有需要的时候再改<img src="/2021/07/03/fpga0001/img_6.png" class=""></li>
+<li>点击<code>finish</code>创建工程  <h1 id="2-添加verilog设计文件"><a href="#2-添加verilog设计文件" class="headerlink" title="2.添加verilog设计文件"></a>2.添加verilog设计文件</h1></li>
+<li>在<code>sources</code>窗口右键，点击<code>Add Sources</code><img src="/2021/07/03/fpga0001/img_7.png" class=""></li>
+<li>点击<code>Add or create design sources</code><img src="/2021/07/03/fpga0001/img_8.png" class=""></li>
+<li>点击<code>create file</code>，输入文件名<img src="/2021/07/03/fpga0001/img_9.png" class=""></li>
+<li>可以一次性创建多个文件，点<code>finish</code>结束，会弹出module窗口，先点击<code>ok</code>，一会再编写<br>如果有弹窗，点击yes即可<img src="/2021/07/03/fpga0001/img_10.png" class=""></li>
+<li>创建完成<img src="/2021/07/03/fpga0001/img_11.png" class=""></li>
+</ul>
+<h1 id="3-添加verilog仿真文件"><a href="#3-添加verilog仿真文件" class="headerlink" title="3. 添加verilog仿真文件"></a>3. 添加verilog仿真文件</h1><ul>
+<li>在<code>sources</code>窗口右键，点击<code>Add Sources</code><br>点击<code>Add or create simulation sources</code><img src="/2021/07/03/fpga0001/img_12.png" class=""></li>
+<li>创建文件，<strong>注意不要与前面设计文件的名字一样</strong><img src="/2021/07/03/fpga0001/img_13.png" class="">
+<h1 id="4-编写代码"><a href="#4-编写代码" class="headerlink" title="4. 编写代码"></a>4. 编写代码</h1><h2 id="4-1-调节字体大小"><a href="#4-1-调节字体大小" class="headerlink" title="4.1 调节字体大小"></a>4.1 调节字体大小</h2>现在这个字体是不是太小了呢？<br>让我们来调节一下吧！</li>
+<li>点击顶部<code>Tools  - Settings</code><img src="/2021/07/03/fpga0001/img_14.png" class=""></li>
+<li>然后点击图片中红框位置，可以在右侧看到字体类型和字体大小<img src="/2021/07/03/fpga0001/img_15.png" class=""></li>
+<li>选择一个你喜欢的字体类型和字体大小吧！<br>我选择的是我以前弄得，把中文微软雅黑和英文Jet Brains Mono混合在一起的字体<br>字体推荐选择consolas<br>下方的框可以预览设置后的字体<img src="/2021/07/03/fpga0001/img_16.png" class=""></li>
+</ul>
+<h2 id="4-2-写个简单的代码"><a href="#4-2-写个简单的代码" class="headerlink" title="4.2 写个简单的代码"></a>4.2 写个简单的代码</h2><p>打开test，写个简单的非门</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> test(</span><br><span class="line"><span class="keyword">input</span> in,</span><br><span class="line"><span class="keyword">output</span> out</span><br><span class="line">    );</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">assign</span> out = ~in;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<h1 id="5-仿真"><a href="#5-仿真" class="headerlink" title="5.  仿真"></a>5.  仿真</h1><p>想要知道代码是否写的有问题，就需要进行仿真</p>
+<p>原文中提到</p>
+<blockquote>
+<p>行为仿真时，输入信号可以使用Testbench编写。</p>
+<p>如果直接修改test模块，在其中添加Testbench代码，再进行仿真，是一种不太正确的做法。因为test模块是设计文件，后面可能会直接烧写进板子。进行仿真时添加了Testbench代码，之后再烧写进板子又得删掉Testbench代码，这样容易出现错误，而且操作起来也比较麻烦。尤其是接口数量多，内部比较复杂的模块。</p>
+<p>所以我们将Testbench代码全部写到仿真文件simu中，并在simu文件中调用test模块，从而进行仿真。</p>
+</blockquote>
+<h2 id="5-1-编写仿真代码"><a href="#5-1-编写仿真代码" class="headerlink" title="5.1 编写仿真代码"></a>5.1 编写仿真代码</h2><p>在simu模块中写入以下代码</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> simu(</span><br><span class="line">);</span><br><span class="line">    <span class="comment">// testbench 时钟信号</span></span><br><span class="line">    <span class="keyword">reg</span> clk = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">always</span> #<span class="number">10</span> clk &lt;= ~clk;</span><br><span class="line">    <span class="comment">// 输出信号</span></span><br><span class="line">    <span class="keyword">wire</span> out;</span><br><span class="line">    <span class="comment">// 调用test模块</span></span><br><span class="line">    test mytest(clk, out);</span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>代码说明：</p>
+<ul>
+<li>reg clk = 0声明了一个reg信号，并赋初值为0。</li>
+<li>always #10 clk &lt;= ~clk为testbench代码，让clk每隔10ns翻转一次，产生周期为20ns的时钟信号。</li>
+<li>wire out声明了一个wire信号，用于连接到test模块的输出。</li>
+<li>test mytest(clk, out)调用了前面写好的test模块，其中mytest是模块名称<ul>
+<li>这里的clk和out分别连接了mytest模块内部的in和out信号。</li>
+<li>这种写法类似于面向对象的编程语言中，对象的实例化，test为类名，而mytest为对象名称。</li>
+<li>同样，Verilog中调用模块时，可以实例化多个test对象。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="5-2-行为仿真"><a href="#5-2-行为仿真" class="headerlink" title="5.2 行为仿真"></a>5.2 行为仿真</h2><ul>
+<li><p>右键<code>simu</code>，点击<code>set as top</code>，将其作为仿真的入口。类似main函数</p>
+<img src="/2021/07/03/fpga0001/img_17.png" class=""></li>
+<li><p>按图中红框点击</p>
+<img src="/2021/07/03/fpga0001/img_18.png" class=""></li>
+<li><p>点击运行按钮，等一段时间后，可以在右侧看到波形(不点击也可以，仿真时间较短，波形较短，根据需求来)，按住ctrl，滚轮向下，可以横向缩放波形</p>
+<img src="/2021/07/03/fpga0001/img_19.png" class=""></li>
+<li><p>右击信号，可以将其添加进右侧波形窗口内</p>
+<img src="/2021/07/03/fpga0001/img_20.png" class=""></li>
+</ul>
+
         </div>
         
             <div class="kratos-copyright text-center clearfix">
@@ -238,7 +303,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://lyyqaq.com/2021/07/03/%E8%AF%84%E8%AE%BA%E5%8C%BA%E6%B5%8B%E8%AF%95/",
+                text: "https://lyyqaq.com/2021/07/03/fpga0001/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -250,9 +315,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://lyyqaq.com/2021/07/03/%E8%AF%84%E8%AE%BA%E5%8C%BA%E6%B5%8B%E8%AF%95/";
-            const title         = "「评论区测试」";
-            const excerpt       = `阿巴阿巴`;
+            const hostUrl       = "https://lyyqaq.com/2021/07/03/fpga0001/";
+            const title         = "「FPGA快速入门(1) 开发环境 vivado使用」";
+            const excerpt       = `前提版本：2017.4适合有编程基础的，我也是边学边记录参考文章：https://www.paincker.com/vivado-basic-usage-1该文章中省略了几处细节，我在按该文章操作时踩到了坑，所以我打算在这个文章的基础...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -271,7 +336,7 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a>
+                    <a class="tag-none-link" href="/tags/fpga/" rel="tag">fpga</a>, <a class="tag-none-link" href="/tags/vivado/" rel="tag">vivado</a>
                 </div>
                 <div class="pull-date">
                 <span>最后编辑：2021-07-03</span>
@@ -283,13 +348,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 关于学生使用学生证申请免费的JetBrains软件使用许可，没有教育邮箱/学生邮箱，clion、pycharm、intellij、idea、goland、phpstorm、rider、webstorm" href="/2021/07/02/关于学生使用学生证申请免费的JetBrains软件使用许可，没有教育邮箱-学生邮箱，clion、pycharm、intellij、idea、goland、phpstorm、rider、webstorm/">&lt; 上一篇</a>
+                <a title=" 多级分类测试" href="/2021/07/03/demo0000001/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 每日一图2021-7-3" href="/2021/07/03/每日一图2021-7-3/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
@@ -300,7 +361,7 @@
         const init = () => {
             new Waline(Object.assign({
                 el: '#w-comments',
-                path: '/2021/07/03/%E8%AF%84%E8%AE%BA%E5%8C%BA%E6%B5%8B%E8%AF%95/'
+                path: '/2021/07/03/fpga0001/'
             }, JSON.parse('{"serverURL":"https://blogremark.vercel.app","visitor":true}')));
         }
         if (typeof Waline == 'undefined') {
@@ -342,6 +403,18 @@
 </aside>
             
                     <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix">
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar"></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E6%8F%90"><span class="toc-text">前提</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0-%E5%AE%89%E8%A3%85"><span class="toc-text">0. 安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B"><span class="toc-text">1. 创建工程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%B7%BB%E5%8A%A0verilog%E8%AE%BE%E8%AE%A1%E6%96%87%E4%BB%B6"><span class="toc-text">2.添加verilog设计文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%B7%BB%E5%8A%A0verilog%E4%BB%BF%E7%9C%9F%E6%96%87%E4%BB%B6"><span class="toc-text">3. 添加verilog仿真文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81"><span class="toc-text">4. 编写代码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E8%B0%83%E8%8A%82%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F"><span class="toc-text">4.1 调节字体大小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E5%86%99%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-text">4.2 写个简单的代码</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E4%BB%BF%E7%9C%9F"><span class="toc-text">5.  仿真</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-1-%E7%BC%96%E5%86%99%E4%BB%BF%E7%9C%9F%E4%BB%A3%E7%A0%81"><span class="toc-text">5.1 编写仿真代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-2-%E8%A1%8C%E4%B8%BA%E4%BB%BF%E7%9C%9F"><span class="toc-text">5.2 行为仿真</span></a></li></ol></li></ol>
+    </div>
+</aside>
                 
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">

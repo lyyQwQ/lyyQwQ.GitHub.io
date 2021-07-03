@@ -6,7 +6,7 @@
   <link href="https://lyyqaq.com/atom.xml" rel="self"/>
   
   <link href="https://lyyqaq.com/"/>
-  <updated>2021-07-03T09:32:53.818Z</updated>
+  <updated>2021-07-03T13:09:57.774Z</updated>
   <id>https://lyyqaq.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FPGA快速入门(1) 开发环境 vivado使用</title>
+    <link href="https://lyyqaq.com/2021/07/03/fpga0001/"/>
+    <id>https://lyyqaq.com/2021/07/03/fpga0001/</id>
+    <published>2021-07-03T09:41:36.000Z</published>
+    <updated>2021-07-03T13:09:57.774Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h1&gt;&lt;p&gt;版本：2017.4&lt;br&gt;适合有编程基础的，我也是边学边记录&lt;br&gt;参考文章：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="快速入门" scheme="https://lyyqaq.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    
+    <category term="FPGA" scheme="https://lyyqaq.com/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/FPGA/"/>
+    
+    
+    <category term="vivado" scheme="https://lyyqaq.com/tags/vivado/"/>
+    
+    <category term="fpga" scheme="https://lyyqaq.com/tags/fpga/"/>
+    
+  </entry>
   
   <entry>
     <title>多级分类测试</title>

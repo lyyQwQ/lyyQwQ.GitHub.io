@@ -184,4 +184,77 @@
         <category>demo2</category>
       </categories>
   </entry>
+  <entry>
+    <title>FPGA快速入门(1) 开发环境 vivado使用</title>
+    <url>/2021/07/03/fpga0001/</url>
+    <content><![CDATA[<h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><p>版本：2017.4<br>适合有编程基础的，我也是边学边记录<br>参考文章：<a href="https://www.paincker.com/vivado-basic-usage-1">https://www.paincker.com/vivado-basic-usage-1</a><br>该文章中省略了几处细节，我在按该文章操作时踩到了坑，所以我打算在这个文章的基础上进行改造<br>不过严格来说，这应该算一篇转载博客，感谢大佬的文章让我快速入门了FPGA</p>
+<h1 id="0-安装"><a href="#0-安装" class="headerlink" title="0. 安装"></a>0. 安装</h1><p>略（<br>网上好多博客都有写怎么安装，这里就不写了（</p>
+<h1 id="1-创建工程"><a href="#1-创建工程" class="headerlink" title="1. 创建工程"></a>1. 创建工程</h1><ul>
+<li>点击 <code>file--new project</code> <img src="/2021/07/03/fpga0001/img_1.png" class=""></li>
+<li>输入工程名称，选择工程路径</li>
+<li>确保选中“Create Project Subdirectory”框，点击next<img src="/2021/07/03/fpga0001/img_2.png" class=""></li>
+<li>选择<code>RTL Project</code></li>
+<li>勾选<code>Do not specify sources at this time</code>，这样可以暂时不用选择源文件<img src="/2021/07/03/fpga0001/img_5.png" class=""></li>
+<li>可以随便选一个，后面有需要的时候再改<img src="/2021/07/03/fpga0001/img_6.png" class=""></li>
+<li>点击<code>finish</code>创建工程  <h1 id="2-添加verilog设计文件"><a href="#2-添加verilog设计文件" class="headerlink" title="2.添加verilog设计文件"></a>2.添加verilog设计文件</h1></li>
+<li>在<code>sources</code>窗口右键，点击<code>Add Sources</code><img src="/2021/07/03/fpga0001/img_7.png" class=""></li>
+<li>点击<code>Add or create design sources</code><img src="/2021/07/03/fpga0001/img_8.png" class=""></li>
+<li>点击<code>create file</code>，输入文件名<img src="/2021/07/03/fpga0001/img_9.png" class=""></li>
+<li>可以一次性创建多个文件，点<code>finish</code>结束，会弹出module窗口，先点击<code>ok</code>，一会再编写<br>如果有弹窗，点击yes即可<img src="/2021/07/03/fpga0001/img_10.png" class=""></li>
+<li>创建完成<img src="/2021/07/03/fpga0001/img_11.png" class=""></li>
+</ul>
+<h1 id="3-添加verilog仿真文件"><a href="#3-添加verilog仿真文件" class="headerlink" title="3. 添加verilog仿真文件"></a>3. 添加verilog仿真文件</h1><ul>
+<li>在<code>sources</code>窗口右键，点击<code>Add Sources</code><br>点击<code>Add or create simulation sources</code><img src="/2021/07/03/fpga0001/img_12.png" class=""></li>
+<li>创建文件，<strong>注意不要与前面设计文件的名字一样</strong><img src="/2021/07/03/fpga0001/img_13.png" class="">
+<h1 id="4-编写代码"><a href="#4-编写代码" class="headerlink" title="4. 编写代码"></a>4. 编写代码</h1><h2 id="4-1-调节字体大小"><a href="#4-1-调节字体大小" class="headerlink" title="4.1 调节字体大小"></a>4.1 调节字体大小</h2>现在这个字体是不是太小了呢？<br>让我们来调节一下吧！</li>
+<li>点击顶部<code>Tools  - Settings</code><img src="/2021/07/03/fpga0001/img_14.png" class=""></li>
+<li>然后点击图片中红框位置，可以在右侧看到字体类型和字体大小<img src="/2021/07/03/fpga0001/img_15.png" class=""></li>
+<li>选择一个你喜欢的字体类型和字体大小吧！<br>我选择的是我以前弄得，把中文微软雅黑和英文Jet Brains Mono混合在一起的字体<br>字体推荐选择consolas<br>下方的框可以预览设置后的字体<img src="/2021/07/03/fpga0001/img_16.png" class=""></li>
+</ul>
+<h2 id="4-2-写个简单的代码"><a href="#4-2-写个简单的代码" class="headerlink" title="4.2 写个简单的代码"></a>4.2 写个简单的代码</h2><p>打开test，写个简单的非门</p>
+<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span> test(</span><br><span class="line"><span class="keyword">input</span> in,</span><br><span class="line"><span class="keyword">output</span> out</span><br><span class="line">    );</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">assign</span> out = ~in;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<h1 id="5-仿真"><a href="#5-仿真" class="headerlink" title="5.  仿真"></a>5.  仿真</h1><p>想要知道代码是否写的有问题，就需要进行仿真</p>
+<p>原文中提到</p>
+<blockquote>
+<p>行为仿真时，输入信号可以使用Testbench编写。</p>
+<p>如果直接修改test模块，在其中添加Testbench代码，再进行仿真，是一种不太正确的做法。因为test模块是设计文件，后面可能会直接烧写进板子。进行仿真时添加了Testbench代码，之后再烧写进板子又得删掉Testbench代码，这样容易出现错误，而且操作起来也比较麻烦。尤其是接口数量多，内部比较复杂的模块。</p>
+<p>所以我们将Testbench代码全部写到仿真文件simu中，并在simu文件中调用test模块，从而进行仿真。</p>
+</blockquote>
+<h2 id="5-1-编写仿真代码"><a href="#5-1-编写仿真代码" class="headerlink" title="5.1 编写仿真代码"></a>5.1 编写仿真代码</h2><p>在simu模块中写入以下代码</p>
+<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span> simu(</span><br><span class="line">);</span><br><span class="line">    <span class="comment">// testbench 时钟信号</span></span><br><span class="line">    <span class="keyword">reg</span> clk = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">always</span> #<span class="number">10</span> clk &lt;= ~clk;</span><br><span class="line">    <span class="comment">// 输出信号</span></span><br><span class="line">    <span class="keyword">wire</span> out;</span><br><span class="line">    <span class="comment">// 调用test模块</span></span><br><span class="line">    test mytest(clk, out);</span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>代码说明：</p>
+<ul>
+<li>reg clk = 0声明了一个reg信号，并赋初值为0。</li>
+<li>always #10 clk &lt;= ~clk为testbench代码，让clk每隔10ns翻转一次，产生周期为20ns的时钟信号。</li>
+<li>wire out声明了一个wire信号，用于连接到test模块的输出。</li>
+<li>test mytest(clk, out)调用了前面写好的test模块，其中mytest是模块名称<ul>
+<li>这里的clk和out分别连接了mytest模块内部的in和out信号。</li>
+<li>这种写法类似于面向对象的编程语言中，对象的实例化，test为类名，而mytest为对象名称。</li>
+<li>同样，Verilog中调用模块时，可以实例化多个test对象。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="5-2-行为仿真"><a href="#5-2-行为仿真" class="headerlink" title="5.2 行为仿真"></a>5.2 行为仿真</h2><ul>
+<li><p>右键<code>simu</code>，点击<code>set as top</code>，将其作为仿真的入口。类似main函数</p>
+<img src="/2021/07/03/fpga0001/img_17.png" class=""></li>
+<li><p>按图中红框点击</p>
+<img src="/2021/07/03/fpga0001/img_18.png" class=""></li>
+<li><p>点击运行按钮，等一段时间后，可以在右侧看到波形(不点击也可以，仿真时间较短，波形较短，根据需求来)，按住ctrl，滚轮向下，可以横向缩放波形</p>
+<img src="/2021/07/03/fpga0001/img_19.png" class=""></li>
+<li><p>右击信号，可以将其添加进右侧波形窗口内</p>
+<img src="/2021/07/03/fpga0001/img_20.png" class=""></li>
+</ul>
+]]></content>
+      <categories>
+        <category>快速入门</category>
+        <category>FPGA</category>
+      </categories>
+      <tags>
+        <tag>vivado</tag>
+        <tag>fpga</tag>
+      </tags>
+  </entry>
 </search>
