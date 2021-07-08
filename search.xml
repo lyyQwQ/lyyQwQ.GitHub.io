@@ -191,7 +191,7 @@
         <category>demo</category>
       </categories>
       <tags>
-        <tag>博客</tag>
+        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -282,6 +282,22 @@
       <tags>
         <tag>vivado</tag>
         <tag>fpga</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阻止前端浏览器页面跳转</title>
+    <url>/2021/07/08/%E9%98%BB%E6%AD%A2%E5%89%8D%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC/</url>
+    <content><![CDATA[<p>按F12打开控制台界面<br>在console里输入以下代码回车</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onbeforeunload=<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;我阻止了页面跳转&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>之后点击对应会跳转页面的按钮，上方会弹出是否离开，点取消即可</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
 </search>

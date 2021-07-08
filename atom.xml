@@ -6,7 +6,7 @@
   <link href="https://lyyqaq.com/atom.xml" rel="self"/>
   
   <link href="https://lyyqaq.com/"/>
-  <updated>2021-07-03T13:15:11.790Z</updated>
+  <updated>2021-07-08T05:40:45.680Z</updated>
   <id>https://lyyqaq.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阻止前端浏览器页面跳转</title>
+    <link href="https://lyyqaq.com/2021/07/08/%E9%98%BB%E6%AD%A2%E5%89%8D%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC/"/>
+    <id>https://lyyqaq.com/2021/07/08/%E9%98%BB%E6%AD%A2%E5%89%8D%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC/</id>
+    <published>2021-07-08T05:38:39.000Z</published>
+    <updated>2021-07-08T05:40:45.680Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;按F12打开控制台界面&lt;br&gt;在console里输入以下代码回车&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://lyyqaq.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://lyyqaq.com/tags/js/"/>
+    
+    <category term="前端" scheme="https://lyyqaq.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>FPGA快速入门(1) 开发环境 vivado使用</title>
@@ -110,7 +138,7 @@
     <link href="https://lyyqaq.com/2021/07/03/%E8%AF%84%E8%AE%BA%E5%8C%BA%E6%B5%8B%E8%AF%95/"/>
     <id>https://lyyqaq.com/2021/07/03/%E8%AF%84%E8%AE%BA%E5%8C%BA%E6%B5%8B%E8%AF%95/</id>
     <published>2021-07-03T05:17:35.000Z</published>
-    <updated>2021-07-03T05:19:33.993Z</updated>
+    <updated>2021-07-05T00:37:16.298Z</updated>
     
     
       
@@ -126,7 +154,7 @@
     <category term="demo" scheme="https://lyyqaq.com/categories/demo/"/>
     
     
-    <category term="博客" scheme="https://lyyqaq.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="blog" scheme="https://lyyqaq.com/tags/blog/"/>
     
   </entry>
   
