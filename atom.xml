@@ -6,7 +6,7 @@
   <link href="https://lyyqaq.com/atom.xml" rel="self"/>
   
   <link href="https://lyyqaq.com/"/>
-  <updated>2021-07-08T05:40:45.680Z</updated>
+  <updated>2021-07-31T02:43:59.472Z</updated>
   <id>https://lyyqaq.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>loadlibrary failed with error 87:参数错误</title>
+    <link href="https://lyyqaq.com/2021/07/31/amdbug/"/>
+    <id>https://lyyqaq.com/2021/07/31/amdbug/</id>
+    <published>2021-07-31T01:52:15.000Z</published>
+    <updated>2021-07-31T02:43:59.472Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="疑难杂症" scheme="https://lyyqaq.com/categories/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/"/>
+    
+    
+    <category term="bug" scheme="https://lyyqaq.com/tags/bug/"/>
+    
+    <category term="amd" scheme="https://lyyqaq.com/tags/amd/"/>
+    
+  </entry>
   
   <entry>
     <title>阻止前端浏览器页面跳转</title>
